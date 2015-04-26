@@ -7,14 +7,15 @@
 
 (defun remove-nans (str)
   (remove-if-not #'digit-char-p str))
+  
+(defun has-country-code-p (digits)
+  (and (= 11 (length digits)) 
+       (char= #\1 (char digits 0))))
 
 (defun ensure-phone-number (digits)
-  (let ((len (length digits)))
-    (cond ((= 10 len) digits)
-          ((and (= 11 len) 
-                (char= #\1 (char digits 0)))
-             (subseq digits 1))
-          (t "0000000000"))))
+    (cond ((= 10 (length digits)) digits)
+          ((has-country-code-p digits) (subseq digits 1))
+          (t "0000000000")))
           
 (defun prettify-digits (digits)
   (format nil "(~a) ~a-~a" (subseq digits 0 3) 
