@@ -6,17 +6,16 @@
 (in-package #:beer)
 
 (defconstant +verse+
-  "~:[No more~;~a~] ~2@*~:[bottles~;bottle~] of beer on the wall, ~@*~:[no more~;~a~] ~2@*~:[bottles~;bottle~] of beer.
+  "~:[No more~;~a~] ~:*bottle~p of beer on the wall, ~@*~:[no more~;~a~] ~:*bottle~p of beer.
 ~@*~:[Go to the store and buy some more, 99 bottles of beer on the wall.~
-~;Take ~2@*~:[one~;it~] down and pass it around, ~2@*~:[~a~;no more~] ~4@*~:[bottles~;bottle~] of beer on the wall.~]~%")
+~;Take ~2@*~:[one~;it~] down and pass it around, ~2@*~:[~a~;no more~] ~3@*bottle~p of beer on the wall.~]~%")
 
 (defun verse (n)
   (format nil +verse+
 	  (> n 0)
 	  n
 	  (= n 1)
-	  (- n 1)
-	  (= n 2)))
+	  (- n 1)))
 
 (defun sing (begin &optional (end 0))
   (if (< end begin)
