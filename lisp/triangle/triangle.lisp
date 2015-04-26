@@ -16,4 +16,3 @@
 	     (= side-2 side-3)
 	     (= side-3 side-1)) :isosceles)
 	(t :scalene)))
-
