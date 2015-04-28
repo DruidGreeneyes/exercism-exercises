@@ -5,19 +5,18 @@
 
 (in-package #:triangle)
 
-(defun mean (&rest nums)
-  (/ (apply #'+ nums) (length nums)))
-
-(defun invalid-triangle-p (a b c)
-  (flet ((invalid-side-p (side) 
-           (>= side (mean a b c))))
-    (find-if #'invalid-side-p triangle)))
-
+(defun non-triangle (a b c)
+  "Tests a triangle with sides a b c against Triangle Inequality."
+  (let ((side-max (/ (+ a b c) 2)))
+    (flet ((valid-side-p (side) 
+             (< side side-max)))
+      (find-if-not #'valid-side-p (list a b c)))))
+    
 (defun triangle (a b c)
   (when (every #'numberp (list a b c))
         (cond ((= a b c) :equilateral)
-              ((invalid-triangle-p a b c) :illogical)
+              ((non-triangle a b c) :illogical)
 	            ((or (= a b)
-	                 (= b c)
-	                 (= c a)) :isosceles)
-	            (t :scalene))))
+                   (= b c)
+                   (= c a)) :isosceles)
+              (t :scalene))))
