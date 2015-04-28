@@ -16,7 +16,7 @@
   (when (every #'numberp (list a b c))
         (cond ((= a b c) :equilateral)
               ((non-triangle a b c) :illogical)
-	            ((or (= a b)
+              ((or (= a b)
                    (= b c)
                    (= c a)) :isosceles)
               (t :scalene))))
