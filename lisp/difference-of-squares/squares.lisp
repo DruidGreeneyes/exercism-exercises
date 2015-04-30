@@ -6,12 +6,17 @@
 
 (in-package #:squares)
 
+(defun sqr (x)
+  (* x x))
+
+(defun range-to (n)
+  (loop for i from 1 to n collect i))
+
 (defun sum-of-squares (n)
-  (loop for i from 1 to n sum (* i i)))
-  
+  (apply #'+ (mapcar #'sqr (range-to n))))
+
 (defun square-of-sums (n)
-  (loop for i from 1 to n sum i into y
-        finally (return (* y y))))
+  (sqr (apply #'+ (range-to n))))
         
 (defun difference (n)
   (- (square-of-sums n) (sum-of-squares n)))
