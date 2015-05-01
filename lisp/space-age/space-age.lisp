@@ -5,25 +5,34 @@
 
 (in-package #:space-age)
 
-(defconstant s (float 31557600))
-(defconstant +planets+ (list "EARTH" 1
-                             "MERCURY" 0.2408467
-                             "VENUS" 0.61519726
-                             "MARS" 1.8808158
-                             "JUPITER" 11.862615
-                             "SATURN" 29.447498
-                             "URANUS" 84.016846
-                             "NEPTUNE" 164.79132))
+(defconstant +s+ (float 31557600))
+(defconstant +planets+ (list (cons "earth" 1)
+                             (cons "mercury" 0.2408467)
+                             (cons "venus" 0.61519726)
+                             (cons "mars" 1.8808158)
+                             (cons "jupiter" 11.862615)
+                             (cons "saturn" 29.447498)
+                             (cons "uranus" 84.016846)
+                             (cons "neptune" 164.79132)))
 
 (defun round-to-two (n)
   (and (floatp n)
        (float (/ (round (* n 100)) 100))))
-  
-(defun def-on-planet (multiplier)
-  (let ((secs-per-year (* s multiplier)))
-    (lambda (secs)
-      (round-to-two (/ secs secs-per-year)))))
 
-(loop for p on +planets+ by #'cddr
-      do (let ((name (intern (concatenate 'string "ON-" (car p)))))
-           (setf (fdefinition name) (def-on-planet (cadr p)))))
+(defun secs-per-year (mult)
+  (* +s+ mult))
+
+(defun make-on-planet (sym year)
+    (setf (fdefinition sym)
+          (on-planet year)))
+
+(defun on-planet (year)
+  (lambda (secs)
+    (round-to-two (/ secs year)))) 
+    
+(defun make-on-symbol (str)
+  (intern (concatenate 'string "ON-" (string-upcase str))))
+
+(loop for (p . m) in +planets+
+      do (make-on-planet (make-on-symbol p)
+                         (secs-per-year m)))
