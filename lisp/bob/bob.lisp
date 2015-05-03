@@ -4,11 +4,23 @@
   (:export #:response-for))
 (in-package #:bob)
 
+(defun silence-p (str)
+  (string= "" (string-trim " " str)))
+
+(defun has-alpha-chars-p (str)
+  (find-if #'alpha-char-p str))
+
+(defun yelling-p (str)
+  (string= str (string-upcase str)))
+
+(defun question-p (str)
+  (char= #\? (char str (- (length str) 1))))
+
 (defun response-for (input)
-  (cond ((equal "" (string-trim " " input)) "Fine. Be that way!")
-        ((and (find-if #'alpha-char-p input) 
-              (equal input (string-upcase input))) "Whoa, chill out!")
-        ((equal #\? (char input (- (length input) 1))) "Sure.")
+  (cond ((silence-p input) "Fine. Be that way!")
+        ((and (has-alpha-chars-p input) 
+              (yelling-p input)) "Whoa, chill out!")
+        ((question-p input) "Sure.")
         (t "Whatever.")))
 
 ;(defun response-for (input) 
