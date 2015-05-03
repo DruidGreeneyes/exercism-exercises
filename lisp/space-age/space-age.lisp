@@ -5,22 +5,18 @@
 
 (in-package #:space-age)
 
-(defconstant +s+ (float 31557600))
-(defconstant +planets+ (list (cons "earth" 1)
-                             (cons "mercury" 0.2408467)
-                             (cons "venus" 0.61519726)
-                             (cons "mars" 1.8808158)
-                             (cons "jupiter" 11.862615)
-                             (cons "saturn" 29.447498)
-                             (cons "uranus" 84.016846)
-                             (cons "neptune" 164.79132)))
+(defconstant +seconds-per-year-by-planet+ '(("earth" . 31557600.0)
+                                           ("mercury" . 7599912.66792)
+                                           ("venus" . 19414149.052176)
+                                           ("mars" . 59354032.69008)
+                                           ("jupiter" . 374355659.124)
+                                           ("saturn" . 929292362.8848)
+                                           ("uranus" . 2651370019.3296)
+                                           ("neptune" . 5200418560.032)))
 
 (defun round-to-two (n)
   (and (floatp n)
        (float (/ (round (* n 100)) 100))))
-
-(defun secs-per-year (mult)
-  (* +s+ mult))
 
 (defun make-on-planet (sym year)
     (setf (fdefinition sym)
@@ -34,5 +30,4 @@
   (intern (concatenate 'string "ON-" (string-upcase str))))
 
 (loop for (p . m) in +planets+
-      do (make-on-planet (make-on-symbol p)
-                         (secs-per-year m)))
+      do (make-on-planet (make-on-symbol p) m))
