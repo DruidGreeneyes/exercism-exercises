@@ -10,9 +10,12 @@
 (defun has-alpha-chars-p (str)
   (find-if #'alpha-char-p str))
 
+(defun all-caps-p (str)
+  (string= str (string-upcase str)))
+
 (defun yelling-p (str)
   (and (has-alpha-chars-p input)
-       (string= str (string-upcase str))))
+       (all-caps-p input)))
 
 (defun question-p (str)
   (char= #\? (char str (- (length str) 1))))
