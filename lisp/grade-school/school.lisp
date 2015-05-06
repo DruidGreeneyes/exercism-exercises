@@ -5,80 +5,61 @@
 (in-package #:school)
 
 (defclass school ()
-  ((roster :reader get-roster
-           :writer set-roster
+  ((roster :accessor roster
+           :reader read-roster
            :initform nil)))
 
-;
 ;;
 ;;;Internal Functions
-
+;;access/modify functions
 (defun create-school ()
   (make-instance 'school))
 
-(defun create-grade (grade-number &optional (students nil))
-  (list :grade grade-number :students students))
+(defun create-grade (grade-num &optional (students nil))
+  (list :grade grade-num :students students))
 
-(defmethod get-grade ((school school) grade-number)
-  (find grade-number (get-roster school) :key #'second))
+(defun find-grade-in-roster (roster grade-num)
+  (find grade-num roster :key #'second))
 
-(defmethod remove-grade ((school school) grade-number)
-  "Returns a copy of (get-roster school) from which all grades matching grade-number have been removed."
-  (let ((roster (get-roster school)))
-    (remove-if #'(lambda (n) (= n grade-number)) roster :key #'second)))
-  
-(defmethod add-grade ((school school) grade-number)
-  (let ((new-roster (cons (create-grade grade-number)
-                          (get-roster school))))
-    (set-roster new-roster school)))
+(defmethod get-grade ((school school) grade-num)
+  (find-grade-in-roster (roster school) grade-num))
 
-(defmethod set-grade (new-grade (school school))
-  (let* ((grade-number (second new-grade))
-         (new-roster (cons new-grade (remove-grade school grade-number))))
-    (set-roster new-roster school)))
-    
-(defmethod ensure-grade ((school school) grade-number)
-  (unless (get-grade school grade-number)
-          (add-grade school grade-number)))
+(defmethod add-student ((school school) grade-num stu-name)
+  (let ((gr (get-grade school grade-num)))
+    (if gr
+        (push stu-name (getf gr :students))
+        (push (create-grade grade-num (list stu-name))
+              (roster school)))))
 
-(defmethod get-students ((school school) grade-number)
-  (car (last (get-grade school grade-number))))
+(defun sort-roster (roster)
+  (let ((sorted-roster nil))
+    (dolist (gr roster)
+      (let ((sorted-students (sort (getf gr :students) #'string<)))
+        (push (list :grade (second gr) :students sorted-students)
+              sorted-roster)))
+    (sort sorted-roster #'< :key #'second)))
 
-(defmethod set-students (grade-number new-students (school school))
-  (let ((new-grade (create-grade grade-number new-students)))
-    (set-grade new-grade school)))
 
-(defmethod add-student ((school school) grade-number student)
-  (ensure-grade school grade-number)
-  (let ((new-students (cons student (get-students school grade-number))))
-    (set-students grade-number new-students school)))
+;;read functions
+(defmethod read-grade ((school school) grade-num)
+  (find-grade-in-roster (read-roster school) grade-num))
 
-(defun sort-grade (grade)
-  (create-grade (second grade)
-                (sort (car (last grade)) #'string<)))
-  
-(defun sort-roster (school)
-  (let ((roster (get-roster school)))
-    (loop for gr in roster
-          collect (sort-grade gr) into safe-roster
-          finally (return (sort safe-roster #'< :key #'second)))))
+(defmethod read-students ((school school) grade-num)
+  (getf (read-grade school grade-num) :students))
 
-;
 ;;
-;;;Exported Functions with stupid naming.
-
-
+;;;External Functions
 (defun make-school ()
   (create-school))
 
+(defun add (school student grade)
+  (add-student school grade student))
+
 (defun grade-roster (school)
-  (get-roster school))
+  (read-roster school))
 
-(defun add (school student grade-number)
-  (add-student school grade-number student))
-
-(defun grade (school grade-number)
-  (get-students school grade-number))
+(defun grade (school grade)
+  (read-students school grade))
 
 (defun sorted (school)
-  (sort-roster school))
+  (sort-roster (read-roster school)))
