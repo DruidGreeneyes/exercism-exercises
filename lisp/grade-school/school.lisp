@@ -50,8 +50,14 @@
 
 
 ;;read-only functions
+(defun gradep (obj)
+  (typep obj 'grade))
+
 (defmethod get-grade ((school school) grade-num)
   (find-grade-in-roster (get-roster school) grade-num))
+
+(defmethod get-students-in-grade (grade)
+  (when (gradep grade) (get-students grade)))
 
 (defmethod sort-students (students)
   (sort students #'string<))
@@ -79,9 +85,7 @@
   (sort-roster (get-roster school)))
 
 (defun grade (school grade)
-  (let ((grade (get-grade school grade)))
-    (if grade
-        (get-students grade))))
+  (get-students-in-grade (get-grade school grade)))
 
 (defun sorted (school)
   (sort-roster (get-roster school)))
