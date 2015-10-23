@@ -1,0 +1,12 @@
+module DNA (toRNA) where
+
+transcribeChar :: Char -> Char
+transcribeChar c = case c of
+                   'C' -> 'G'
+                   'G' -> 'C'
+                   'A' -> 'U'
+                   'T' -> 'A'
+                   _ -> '0'
+
+toRNA :: String -> String
+toRNA = map transcribeChar

@@ -1,0 +1,52 @@
+(defpackage #:raindrops
+  (:use #:common-lisp)
+  (:export #:convert))
+
+(in-package #:raindrops)
+
+(defun is-factor? (n i)
+  (integerp (/ n i)))
+
+(defun half (n)
+  (/ n 2))
+
+(defun first-factor (n)
+  (if (< n 4)
+      n
+      (loop for i from 2 to (half n)
+         thereis (when (is-factor? n i) i)
+         finally (return n))))
+
+(defun list-prime-factors (n)
+  (let ((factor (first-factor n)))
+    (if (= factor n)
+        (list n)
+        (cons factor (list-prime-factors (/ n factor))))))
+
+(defun generate-sound (num)
+  (case num
+    (3 "Pling")
+    (5 "Plang")
+    (7 "Plong")
+    (otherwise num)))
+
+(defun generate-sounds (ls)
+  (mapcar #'generate-sound ls))
+
+(defun soundp (n)
+  (and (integerp n)
+       (or (= n 3)
+           (= n 5)
+           (= n 7))))
+
+(defun find-valid-sounds (ls)
+  (generate-sounds
+   (sort
+    (remove-if-not #'soundp
+                   (remove-duplicates ls)) #'<)))
+
+(defun convert (n)
+  (let ((valid-sounds (find-valid-sounds (list-prime-factors n))))
+    (if valid-sounds
+	(format nil "~{~A~}" valid-sounds)
+	(format nil "~A" n))))

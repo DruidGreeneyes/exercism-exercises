@@ -1,0 +1,24 @@
+(defpackage #:raindrops
+  (:use #:common-lisp)
+  (:export #:convert))
+
+(in-package #:raindrops)
+
+(defun has-factor? (n i)
+  (= 0 (mod n i)))
+
+(defun generate-sounds (n)
+  (if (< n 3)
+      n
+      (let ((acc nil))
+	(cond ((has-factor? n 3) (push "Pling" acc))
+	      ((has-factor? n 5) (push "Plang" acc))
+	      ((has-factor? n 7) (push "Plong" acc))
+	      (t nil))
+	(format t "~A" acc)
+	(if acc
+	    (concatenate 'string (reverse acc))
+	    n))))
+
+(defun convert (n)
+  (format nil "~A" (generate-sounds n)))
