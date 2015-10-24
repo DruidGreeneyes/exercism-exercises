@@ -1,0 +1,17 @@
+module Sublist (Sublist(Equal, Sublist, Superlist, Unequal), sublist) where
+
+data Sublist = Equal | Sublist | Superlist | Unequal deriving Enum
+
+findSublist :: Eq a => [a] -> [a] -> Bool
+findSublist x y
+       | x == y                    = True
+       | l < 0 || null x || null y = False
+       | otherwise                 = findSublist x (tail y)
+       where l = length x - length y                          
+
+sublist :: Eq a => [a] -> [a] -> Sublist
+sublist x y
+    | x == y          = Equal
+    | findSublist x y = Sublist
+    | findSublist y x = Superlist
+    | otherwise       = Unequal

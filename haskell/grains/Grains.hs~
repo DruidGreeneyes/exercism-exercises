@@ -1,0 +1,7 @@
+module Grains (square, total) where
+    
+square :: Int -> Int
+square n = 2 ^ (n - 1)
+           
+total :: Int -> Int
+total n = square (n + 1) - 1 

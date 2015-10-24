@@ -1,0 +1,4 @@
+module Gigasecond (fromDay) where
+
+fromDay :: Float -> Float
+fromDay = (+) (10**9)
