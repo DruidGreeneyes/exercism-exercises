@@ -17,7 +17,7 @@
   (and (consp alst)
        (if (has-factor? n (caar alst))
 		   (concatenate 'string
-						(cdar alst)
+                        (cdar alst)
 						(generate-sounds n (cdr alst)))
 		   (generate-sounds n (cdr alst)))))
 
