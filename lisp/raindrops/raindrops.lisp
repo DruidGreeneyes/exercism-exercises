@@ -18,7 +18,7 @@
        (if (has-factor? n (caar alst))
 		   (concatenate 'string
                         (cdar alst)
-						(generate-sounds n (cdr alst)))
+                        (generate-sounds n (cdr alst)))
 		   (generate-sounds n (cdr alst)))))
 
 (defun convert (n)
