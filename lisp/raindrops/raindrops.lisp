@@ -4,33 +4,28 @@
 
 (in-package #:raindrops)
 
-(defparameter *sounds*
-  (list
-   (cons 3 "Pling")
-   (cons 5 "Plang")
-   (cons 7 "Plong")))
+(declaim (inline not-factor? valid-sounds add-sound))
 
-(defun has-factor? (n i)
-  (= 0 (mod n i)))
+(defparameter *sounds*
+  (pairlis
+   (list 7 5 3)
+   (list "Plong" "Plang" "Pling")))
+
+(defun not-factor? (n i)
+  (/= 0 (mod n i)))
+
+(defun valid-sounds (n)
+  (remove n *sounds* :test #'not-factor? :key #'car))
 
 (defun add-sound (str snd)
   (concatenate 'string str snd))
 
 (defun generate-sounds (n alst &optional (str nil))
   (if (atom alst) str
-      (destructuring-bind ((i . snd) . rest) alst
-        (generate-sounds n rest (if (has-factor? n i)
-                                    (add-sound str snd)
-                                    str)))))
-
-(defun generate-sounds-old (n alst)
-  (and (consp alst)
-       (if (has-factor? n (caar alst))
-           (concatenate 'string
-                        (cdar alst)
-                        (generate-sounds n (cdr alst)))
-           (generate-sounds n (cdr alst)))))
+      (destructuring-bind ((_n . snd) . rest) alst
+        (declare (ignore _n))
+        (generate-sounds n rest (add-sound str snd)))))
 
 (defun convert (n)
-  (let ((sounds (generate-sounds n *sounds*)))
+  (let ((sounds (generate-sounds n (valid-sounds n))))
     (format nil "~A" (or sounds n))))
