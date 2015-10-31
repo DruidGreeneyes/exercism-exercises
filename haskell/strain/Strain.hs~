@@ -1,0 +1,12 @@
+module Strain (keep, discard) where
+
+remove :: Bool -> [a] -> (a -> Bool) -> [a] -> [a]
+remove _ acc _ []    = acc
+remove b acc f (h:t) = remove b a f t
+    where a = if b then h:acc else acc
+
+keep :: (a -> Bool) -> [a] -> [a]
+keep = remove False []
+
+discard :: (a -> Bool) -> [a] -> [a]
+discard = remove True []

@@ -1,0 +1,8 @@
+[debug] Running TaskDef(HelloWorldTest, org.scalatest.tools.Framework$$anon$1@41f18dad, false, [SuiteSelector])
+[info] Run completed in 399 milliseconds.
+[info] Total number of tests run: 3
+[info] Suites: completed 1, aborted 0
+[info] Tests: succeeded 3, failed 0, canceled 0, ignored 0, pending 0
+[info] All tests passed.
+[debug] Passed tests:
+[debug] 	HelloWorldTest

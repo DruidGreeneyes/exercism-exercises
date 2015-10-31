@@ -1,0 +1,8 @@
+[info] HammingSpecs:
+[info] - should detect no difference between empty strands
+[info] - should detect no difference between identical strands (pending)
+[info] - should detect complete hamming distance in small strand (pending)
+[info] - should give hamming distance in off by one strand (pending)
+[info] - should give small hamming distance in middle somewhere (pending)
+[info] - should give a larger distance (pending)
+[info] - should be undefined for strands of unequal length (pending)

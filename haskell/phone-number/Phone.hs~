@@ -1,0 +1,21 @@
+module Phone (areaCode, number, prettyPrint) where
+
+import Data.Char
+    
+number :: String -> String
+number p
+    | length p == 11 && head p == '1' = filter isDigit (tail p)
+    | length p == 10                  = filter isDigit p
+    | otherwise                       = "0000000000"
+
+areaCode :: String -> String
+areaCode = number . take 3
+
+pprint :: String -> String
+pprint p = concat ["(", a, ") ", r, "-", n]
+    where a = take 3 p
+          r = take 3 (drop 3 p)
+          n = drop 6 p
+
+prettyPrint :: String -> String
+prettyPrint = number . pprint

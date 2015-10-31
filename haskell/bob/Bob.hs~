@@ -1,0 +1,11 @@
+
+module Bob (responseFor) where
+
+import Data.Char  
+
+responseFor :: String -> String
+responseFor s
+    | null (words s) = "Fine. Be that way!"
+    | s == map toUpper s = "Whoa, chill out!"
+    | last s == '?' = "Sure."
+    | otherwise = "Whatever."

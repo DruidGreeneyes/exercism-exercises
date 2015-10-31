@@ -1,0 +1,8 @@
+class Bob {
+  def hey(str : String) = str match {
+    case str.toUpperCase   => ("Whoa, chill out!")
+    case str.endsWith("?") => ("Sure.")
+    case str.endsWith(".") => ("Whatever.")
+    case _                 => ("Fine, be that way!")
+  }
+}

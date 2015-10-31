@@ -14,18 +14,17 @@
 (defun not-factor? (n i)
   (/= 0 (mod n i)))
 
-(defun valid-sounds (n)
+(defun validate-sounds (n)
   (remove n *sounds* :test #'not-factor? :key #'car))
 
 (defun add-sound (str snd)
   (concatenate 'string str snd))
 
-(defun generate-sounds (n alst &optional (str nil))
-  (if (atom alst) str
-      (destructuring-bind ((_n . snd) . rest) alst
-        (declare (ignore _n))
-        (generate-sounds n rest (add-sound str snd)))))
+(defun generate-sounds (alst &optional (str nil))
+  (if (atom alst)
+      str
+      (generate-sounds (cdr alst) (add-sound str (cdar alst)))))
 
 (defun convert (n)
-  (let ((sounds (generate-sounds n (valid-sounds n))))
+  (let ((sounds (generate-sounds (validate-sounds n))))
     (format nil "~A" (or sounds n))))

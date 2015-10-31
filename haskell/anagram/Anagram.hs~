@@ -1,0 +1,10 @@
+module Anagram (anagramsFor) where
+
+import Data.List
+
+
+isAnagramFor :: String -> String -> Bool
+isAnagramFor x y = sort x == sort y
+
+anagramsFor :: String -> [String] -> [String]
+anagramsFor s = filter (isAnagramFor s)

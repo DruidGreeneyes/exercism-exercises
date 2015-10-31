@@ -1,0 +1,39 @@
+[debug] 
+[debug] Initial source changes: 
+[debug] 	removed:Set()
+[debug] 	added: Set(/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala)
+[debug] 	modified: Set()
+[debug] Invalidated products: Set()
+[debug] External API changes: API Changes: Set()
+[debug] Modified binary dependencies: Set()
+[debug] Initial directly invalidated sources: Set(/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala)
+[debug] 
+[debug] Sources indirectly invalidated by:
+[debug] 	product: Set()
+[debug] 	binary dep: Set()
+[debug] 	external source: Set()
+[debug] All initially invalidated sources: Set(/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala)
+[debug] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources
+[info] Compiling 1 Scala source to /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/target/scala-2.11/test-classes...
+[debug] Getting compiler-interface from component compiler for Scala 2.11.7
+[debug] Getting compiler-interface from component compiler for Scala 2.11.7
+[debug] Running cached compiler 162d93cf, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-bootclasspath
+[debug] 	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/josh/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+[debug] 	-classpath
+[debug] 	/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/target/scala-2.11/test-classes:/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/target/scala-2.11/classes:/home/josh/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.5.jar:/home/josh/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.2.jar:/home/josh/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar
+[debug] Scala compilation took 6.461542057 s
+[debug] Invalidating /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala...
+[debug] Invalidating (transitively) by inheritance from /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala...
+[debug] Initial set of included nodes: Set(/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala)
+[debug] Invalidated by transitive inheritance dependency: Set(/home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala)
+[debug] The /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/bob/src/test/scala/bob_test.scala source file has the following implicit definitions changed:
+[debug] 	convertToStringMustWrapper, convertToStringCanWrapper, convertToAnyShouldWrapper, convertNumericToPlusOrMinusWrapper, convertToEqualizer, convertToInAndIgnoreMethodsAfterTaggedAs, shorthandSharedTestRegistrationFunction, convertToRegexWrapper, unconstrainedEquality, convertToInAndIgnoreMethods, convertToStringShouldWrapper, convertSymbolToHavePropertyMatcherGenerator, shorthandTestRegistrationFunction.
+[debug] All member reference dependencies will be considered within this context.
+[debug] New invalidations:
+[debug] 	Set()
+[debug] Initial set of included nodes: Set()
+[debug] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] 	Set()
+[debug] All newly invalidated sources after taking into account (previously) recompiled sources:Set()

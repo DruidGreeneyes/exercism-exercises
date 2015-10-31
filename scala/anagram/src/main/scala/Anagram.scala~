@@ -1,0 +1,6 @@
+
+class Anagram (str : String) {
+  def matches( strs : Seq[String] ) : Seq[String] =
+    strs.filter(_.sort == str.sort)
+}
+

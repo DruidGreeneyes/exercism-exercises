@@ -1,0 +1,18 @@
+module SumOfMultiples (sumOfMultiples, sumOfMultiplesDefault) where
+
+multiplesBelow :: Int -> Int -> Int -> [Int]
+multiplesBelow i n o
+    | n >= i    = []
+    | otherwise = n:multiplesBelow i (n + o) o
+
+sumMults :: [Int] -> Int -> Int -> Int
+sumMults [] i acc = acc
+sumMults (h:t) i acc =
+    let a = acc + sum (multiplesBelow i h h) in
+    sumMults t i a
+
+sumOfMultiples :: [Int] -> Int -> Int
+sumOfMultiples ns i = sumMults ns i 0
+
+sumOfMultiplesDefault :: Int -> Int
+sumOfMultiplesDefault = sumOfMultiples [3, 5]

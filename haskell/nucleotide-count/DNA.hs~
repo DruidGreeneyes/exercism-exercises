@@ -1,0 +1,11 @@
+module DNA (count, nucleotideCounts) where
+
+isNuc :: Char -> Bool
+isNuc c
+    | elem c ['A', 'T', 'C', 'G'] = True
+    | otherwise                   = False
+    
+count :: Char -> String -> Int
+count nuc str
+      | isNuc nuc && all isNuc str = length (filter (== nuc) str)
+      | otherwise                  = error "invalid nucleotide"

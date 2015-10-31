@@ -1,0 +1,365 @@
+[0m[[33mwarn[0m] [0mMultiple dependencies with the same organization/name but different versions. To avoid conflict, pick one version:[0m
+[0m[[33mwarn[0m] [0m * org.scala-lang:scala-reflect:(2.11.2, 2.11.7)[0m
+[0m[[33mwarn[0m] [0m * org.scala-lang.modules:scala-xml_2.11:(1.0.2, 1.0.4)[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@6f8fefad[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.7[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.7 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-library;2.11.7[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scalatest#scalatest_2.11;2.2.5 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@281ae047[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalatest#scalatest_2.11;2.2.5[0m
+[0m[[0mdebug[0m] [0m	found org.scalatest#scalatest_2.11;2.2.5 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46be3110[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.2] org.scala-lang#scala-reflect;2.11.2[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@15861f0e[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [runtime->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scalatest#scalatest_2.11;2.2.5 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.2 [test-internal->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-library;2.11.7 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.7 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.11.7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.7 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.11.7[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.11.7 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.7 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.7 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.11.7 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.7 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.11.7 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.11.7 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.11.7[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.11.7 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.11.7] org.scala-lang#scala-reflect;2.11.7[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.7 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.7 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang#scala-reflect;2.11.7 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.4 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-xml_2.11;1.0.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.4 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-xml_2.11;1.0.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-xml_2.11;1.0.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->jline#jline;2.12.1 [scala-tool->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving jline#jline;2.12.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: jline#jline;2.12.1 {scala-tool=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: jline#jline;2.12.1[0m
+[0m[[0mdebug[0m] [0m	found jline#jline;2.12.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->jline#jline;2.12.1 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->jline#jline;2.12.1 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT->jline#jline;2.12.1 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-library/2.11.7/docs/scala-library-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.11.7!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-library/2.11.7/srcs/scala-library-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.7!scala-library.jar(doc) (14491ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-library/2.11.7/scala-library-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-library;2.11.7!scala-library.jar(src) (726ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scalatest/scalatest_2.11/2.2.5/srcs/scalatest_2.11-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scalatest/scalatest_2.11/2.2.5/docs/scalatest_2.11-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scalatest/scalatest_2.11/2.2.5/jars/scalatest_2.11.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.11;2.2.5!scalatest_2.11.jar(src) (1034ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.11;2.2.5!scalatest_2.11.jar(doc) (10575ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scalatest/scalatest_2.11/2.2.5/scalatest_2.11-2.2.5.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalatest#scalatest_2.11;2.2.5!scalatest_2.11.jar (4109ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-reflect/2.11.2/docs/scala-reflect-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-reflect/2.11.2/srcs/scala-reflect-sources.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.2!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.2!scala-reflect.jar(doc) (5029ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.2/scala-reflect-2.11.2-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.2!scala-reflect.jar(src) (552ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.0.2/docs/scala-xml_2.11-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.0.2/srcs/scala-xml_2.11-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.0.2/jars/scala-xml_2.11.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(doc) (3760ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(src) (529ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.2/scala-xml_2.11-1.0.2.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar (1664ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-compiler/2.11.7/srcs/scala-compiler-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-compiler/2.11.7/docs/scala-compiler-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar(src) (3652ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.11.7/scala-compiler-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-compiler;2.11.7!scala-compiler.jar(doc) (9546ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-reflect/2.11.7/docs/scala-reflect-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang/scala-reflect/2.11.7/srcs/scala-reflect-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar(doc) (5414ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.11.7/scala-reflect-2.11.7-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang#scala-reflect;2.11.7!scala-reflect.jar(src) (2365ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.0.4/srcs/scala-xml_2.11-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-xml_2.11/1.0.4/docs/scala-xml_2.11-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(src) (444ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-xml_2.11;1.0.4!scala-xml_2.11.jar(doc) (2946ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.4/docs/scala-parser-combinators_2.11-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.4/srcs/scala-parser-combinators_2.11-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(doc) (2316ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.4!scala-parser-combinators_2.11.jar(src) (439ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/jline/jline/2.12.1/docs/jline-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m		tried /home/josh/.ivy2/local/jline/jline/2.12.1/srcs/jline-sources.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-javadoc.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-javadoc.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-javadoc.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-javadoc.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] jline#jline;2.12.1!jline.jar(doc) (1924ms)[0m
+[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-sources.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-sources.jar ...[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-sources.jar[0m
+[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-sources.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/jline/jline/2.12.1/jline-2.12.1-sources.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] jline#jline;2.12.1!jline.jar(src) (403ms)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 195ms :: artifacts dl 71965ms[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT compile produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT runtime produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT test produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT provided produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT optional produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT compile-internal produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT runtime-internal produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT test-internal produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT plugin produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT sources produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT docs produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT pom produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#word-count$sources_javadoc_2.11;0.1-SNAPSHOT scala-tool produced in /home/josh/Dropbox/Programming/resources/exercism-exercises/scala/word-count/target/resolution-cache/reports/default-word-count$sources_javadoc_2.11-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (195ms resolve - 71965ms download)[0m

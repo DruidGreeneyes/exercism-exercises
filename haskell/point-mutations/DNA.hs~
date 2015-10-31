@@ -1,0 +1,15 @@
+module DNA (hammingDistance) where
+
+import Data.List
+
+computeHammingDistance :: Int -> String -> String -> Int
+computeHammingDistance i s1 s2 
+    | s1 == s2  = i
+    | l > 0     = computeHammingDistance (abs l) (take (length s2) s1) s2
+    | l < 0     = computeHammingDistance (abs l) s1 (take (length s1) s2)
+    | otherwise = length (s1 \\ s2)
+    where l = length s1 - length s2
+                               
+                          
+hammingDistance :: String -> String -> Int
+hammingDistance = computeHammingDistance 0      

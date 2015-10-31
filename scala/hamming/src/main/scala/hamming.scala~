@@ -1,0 +1,12 @@
+object Hamming {
+  def compute (str1 : String, str2 : String, acc : Int = 0)
+    val ind = findMismatch(str1, str2)
+    if ( ind < 0 ) (acc) else 
+      compute(str1.substring(ind), str2.substring(ind), acc.++)
+
+  def findMismatch (str1 : String, str2 : String)
+    if( str1 == str2 ) (-1) else 
+      for( i <- 0 to str1.length ) 
+        if( str1.charAt(i) == str2.charAt(i) )
+          (return i)
+}

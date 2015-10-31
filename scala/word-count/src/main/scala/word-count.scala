@@ -1,0 +1,18 @@
+
+import scala.collection.mutable
+
+class Phrase (phrase : String) {
+
+  def wordCount() : mutable.Map[String, Int] =
+    buildWordCount( phrase.toLowerCase.split("[^abcdefghijklmnopqrstuvwxyz1234567890']").filter(_ != "") )
+
+  def buildWordCount( arr : Array[String], ret : mutable.Map[String, Int] = mutable.Map(), acc : Int = 0 ) : mutable.Map[String, Int] =
+    if( acc == arr.length ) ret else {
+      if( ret.contains(arr(acc)) ) {
+        ret(arr(acc)) += 1
+      } else {
+        ret += (arr(acc) -> 1)
+      }
+      buildWordCount( arr, ret, acc + 1 )
+    }
+}

@@ -1,0 +1,19 @@
+(defpackage #:prime-factors
+  (:use #:cl)
+  (:export #:factors-of))
+
+(in-package #:prime-factors)
+
+(defun first-factor (n)
+  (if (< n 4)
+      n
+      (loop for i from 2 to (/ n 2)
+         thereis (when (= 0 (mod n i)) i)
+         finally (return n))))
+
+(defun factors-of (n)
+  (if (= n 1) nil
+      (let ((factor (first-factor n)))
+        (if (= factor n)
+            (list n)
+            (cons factor (factors-of (/ n factor)))))))

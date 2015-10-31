@@ -1,0 +1,4 @@
+object HelloWorld {
+  def hello()             = println("Hello, World!")
+  def hello(name: String) = println("Hello, " + name + "!")
+}
