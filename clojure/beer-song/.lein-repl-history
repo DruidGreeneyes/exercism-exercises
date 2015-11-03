@@ -1,0 +1,19 @@
+(load-file "beer_song_test.clj")
+\Newline
+\NewLine
+\newline
+(join (concat "abc" \newline "bca"))
+(clojure.string/join (concat "abc" \newline "bca"))
+(clojure.string/join (concat "abc" '\newline' "bca"))
+(clojure.string/join (concat "abc" '\n' "bca"))
+(clojure.string/join (concat "abcbca"))
+"\newline"
+"""\newline"""
+(clojure.string/join (concat "abc" [\newline] "bca"))
+(load-file "beer_song_test.clj")
+"\n"
+'\n'
+"\n"
+"test\n\r"
+(load-file "beer_song_test.clj")
+(quit)

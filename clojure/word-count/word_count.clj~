@@ -1,0 +1,12 @@
+(ns word-count)
+
+(require '[clojure.string :as s])
+
+(defn count-strings [strs]
+  (frequencies (remove s/blank? strs)))
+
+(defn word-count [str]
+  (-> str
+      (s/lower-case)
+      (s/split #"[^abcdegfhijklmnopqrstuvwxys1234567890']")
+      (count-strings)))

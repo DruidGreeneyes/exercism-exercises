@@ -1,0 +1,8 @@
+(load-file "anagram_test.clj")
+(sorted? "abcdefg")
+(sort "agde")
+(load-file "anagram_test.clj")
+(filter (= "s") "absd")
+(-> \s (=) (filter "absd"))
+(load-file "anagram_test.clj")
+(quit)
